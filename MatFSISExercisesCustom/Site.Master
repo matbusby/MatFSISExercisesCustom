@@ -42,7 +42,7 @@
             <div class="navbar navbar-inverse">
                 <nav class="navbar navbar-expand-md navbar-light fixed-top">
                     <a class="navbar-brand" href="Default.aspx" runat="server">
-                            <strong>Robbin Law</strong>
+                            <strong>Mat Busby</strong>
                     </a>
                     <button class="navbar-toggler" type="button"
                             data-toggle="collapse" data-target="#navbarMenuName"
