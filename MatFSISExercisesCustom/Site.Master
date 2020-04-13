@@ -66,6 +66,13 @@
                                             style="color:black" runat="server">
                                             Exercise 6
                                     </a>
+
+                                    <a class="dropdown-item"
+                                            href="~/Pages/Exercise9and10.aspx"
+                                            style="color:black" runat="server">
+                                            Exercises 9 & 10
+                                    </a>
+
                                     
                                 </div>
                             </li>

@@ -126,7 +126,9 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Pages\CRUDPage.aspx" />
     <Content Include="Pages\Exercise6.aspx" />
+    <Content Include="Pages\Exercise9and10.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -288,12 +290,26 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Pages\CRUDPage.aspx.cs">
+      <DependentUpon>CRUDPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CRUDPage.aspx.designer.cs">
+      <DependentUpon>CRUDPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Exercise6.aspx.cs">
       <DependentUpon>Exercise6.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\Exercise6.aspx.designer.cs">
       <DependentUpon>Exercise6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Exercise9and10.aspx.cs">
+      <DependentUpon>Exercise9and10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Exercise9and10.aspx.designer.cs">
+      <DependentUpon>Exercise9and10.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

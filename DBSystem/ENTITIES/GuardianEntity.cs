@@ -13,19 +13,19 @@ namespace DBSystem.ENTITIES
     public class GuardianEntity
     {
         [Key]
-        public int GuardianID { get; set; }
+        public int? GuardianID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public int EmergencyPhoneNumber { get; set; }
+        public string EmergencyPhoneNumber { get; set; }
         public string EmailAddress { get; set; }
 
-        //[NotMapped]
-        //public string CompanyAddress
-        //{
-        //    get
-        //    {
-        //        return Address + " " + City + " " + PostalCode;
-        //    }
-        //}
+        [NotMapped]
+        public string GuardianFullName
+        {
+            get
+            {
+                return FirstName + " " + LastName;
+            }
+        }
     }
 }

@@ -14,22 +14,22 @@ namespace DBSystem.ENTITIES
     {
         [Key]
         public int PlayerID { get; set; }
-        public int GuardianID { get; set; }
-        public int TeamID { get; set; }
+        public int? GuardianID { get; set; }
+        public int? TeamID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int? Age { get; set; }
-        public char Gender { get; set; }
+        public string Gender { get; set; }
         public string AlbertaHealthCareNumber { get; set; }
         public string MedicalAlertDetails { get; set; }
 
-        //[NotMapped]
-        //public string ProductandID
-        //{
-        //    get
-        //    {
-        //        return ProductName + "(" + ProductID + ")";
-        //    }
-        //}
+        [NotMapped]
+        public string PlayerandID
+        {
+            get
+            {
+                return FirstName + " " + LastName + "(" + PlayerID + ")";
+            }
+        }
     }
 }

@@ -12,6 +12,16 @@ namespace DBSystem.BLL
 {
     public class GuardianController //Guardian
     {
+
+        public GuardianEntity FindByPKID(int id)
+        {
+            using (var context = new Context())
+            {
+                return context.GuardianEntitys.Find(id);
+            }
+        }
+
+
         public List<GuardianEntity> List()
         {
             using (var context = new Context())
@@ -19,5 +29,15 @@ namespace DBSystem.BLL
                 return context.GuardianEntitys.ToList();
             }
         }
+
+        //public List<GuardianEntity> List()
+        //{
+        //    using (var context = new Context())
+        //    {
+        //        return context.GuardianEntitys.ToList();
+        //    }
+        //}
+
+
     }
 }
